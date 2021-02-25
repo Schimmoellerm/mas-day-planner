@@ -3,7 +3,7 @@
 var currentDay = $('#currentDay');
 
 setInterval(function() {
-    currentDay.text(moment().format('[Today is] MMMM Do, YYYY kk:mm'));
+    currentDay.text(moment().format('[Today is] MMMM Do, YYYY h:mm a'));
 }, 1000);
 
 /***************************************************************************/
