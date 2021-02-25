@@ -13,17 +13,17 @@ console.log(currentTime);
 let timeArray = [9, 10, 11, 12, 13, 14, 15, 16, 17];
 console.log(timeArray);
 
-function timeChecker(i) {
-    console.log(timeArray[i]);
+function timeChecker(time) {
+    console.log(time);
     console.log(currentTime);
     console.log(parseInt(currentTime));
-    if (timeArray[i] < parseInt(currentTime)) {
+    if (time < parseInt(currentTime)) {
         console.log('grey');//set to grey
 
-    }else if (timeArray[i] > parseInt(currentTime)){
+    }else if (time > parseInt(currentTime)){
         console.log('green');//set to green
 
-    }else if (timeArray[i] == parseInt(currentTime)){
+    }else if (time == parseInt(currentTime)){
         console.log('red');//set to red
 
     }
@@ -31,10 +31,11 @@ function timeChecker(i) {
 
 function timeLooper() {
     for (i=0; i<timeArray.length; i++) {
-        timeChecker(i);
+        timeChecker(timeArray[i]);    
     }
+    //timeArray.forEach(timeChecker);    
 };
-
 timeLooper();
 
 /*************************************************************/
+
