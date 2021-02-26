@@ -39,4 +39,8 @@ timeLooper();
 
 /***************************************************************************/
 //Store inputs in local storage
+$('.saveBtn').on("click", function(){
+    console.log('Click Me Harder Daddy!');
+})
+
 
