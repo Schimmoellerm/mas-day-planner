@@ -49,11 +49,11 @@ $('#saveBtn1').on("click", function(){
     console.log(timeSlot1, InputValue1);
 });
 
-let TextBox9am;
 
 function getData() {
-TextBox9am = JSON.parse(localStorage.getItem(saveBtn1));
+TextBox9am = localStorage.getItem("saveBtn1");
 console.log(TextBox9am);
+document.getElementById("9").value = TextBox9am;
 }
 
 getData();
