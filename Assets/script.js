@@ -39,6 +39,8 @@ timeLooper();
 
 /***************************************************************************/
 //Store inputs in local storage
+let inputBox1 = $('#9');
+
 $('#saveBtn1').on("click", function(){
     console.log('Click1');
     let timeSlot1 = $(this).attr('id');
@@ -46,6 +48,15 @@ $('#saveBtn1').on("click", function(){
     localStorage.setItem(timeSlot1, InputValue1);
     console.log(timeSlot1, InputValue1);
 });
+
+let TextBox9am;
+
+function getData() {
+TextBox9am = JSON.parse(localStorage.getItem(saveBtn1));
+console.log(TextBox9am);
+}
+
+getData();
 
 $('#saveBtn2').on("click", function(){
     console.log('Click2');
