@@ -19,13 +19,13 @@ function timeChecker(time) {
     console.log(parseInt(currentTime));
     if (time < parseInt(currentTime)) {
         console.log('grey');//set to grey
-
+        $("#" + timeArray[i]).attr("style", "background-color: #d3d3d3")
     }else if (time > parseInt(currentTime)){
         console.log('green');//set to green
-
+        $("#" + timeArray[i]).attr("style", "background-color: #77dd77")
     }else if (time == parseInt(currentTime)){
         console.log('red');//set to red
-
+        $("#" + timeArray[i]).attr("style", "background-color: #ff6961")
     }
 };
 
@@ -38,4 +38,5 @@ function timeLooper() {
 timeLooper();
 
 /*************************************************************/
+//Store inputs in local storage
 
