@@ -17,8 +17,9 @@ function timeChecker(time) {
     console.log(time);
     console.log(currentTime);
     console.log(parseInt(currentTime));
+    //set to grey
     if (time < parseInt(currentTime)) {
-        console.log('grey');//set to grey
+        console.log('grey');
         $("#" + timeArray[i]).attr("style", "background-color: #d3d3d3")
     }else if (time > parseInt(currentTime)){
         console.log('green');//set to green
@@ -117,39 +118,50 @@ $('#saveBtn9').on("click", function(){
 function getData() {
     TextBox9am = localStorage.getItem("saveBtn1");
     console.log(TextBox9am);
-    document.getElementById("9").value = TextBox9am;
+    //document.getElementById("9").value = TextBox9am;
+    $('#9').val(TextBox9am)
+    console.log($('#9').val())
+    
 
     TextBox10am = localStorage.getItem("saveBtn2");
     console.log(TextBox10am);
-    document.getElementById("10").value = TextBox10am;
+    //document.getElementById("10").value = TextBox10am;
+    $('#10').val(TextBox10am)
 
     TextBox11am = localStorage.getItem("saveBtn3");
     console.log(TextBox11am);
-    document.getElementById("11").value = TextBox11am;
+    //document.getElementById("11").value = TextBox11am;
+    $('#11').val(TextBox11am)
 
     TextBox12am = localStorage.getItem("saveBtn4");
     console.log(TextBox12am);
-    document.getElementById("12").value = TextBox12am;
+    //document.getElementById("12").value = TextBox12am;
+    $('#12').val(TextBox12am)
 
     TextBox1pm = localStorage.getItem("saveBtn5");
     console.log(TextBox1pm);
-    document.getElementById("13").value = TextBox1pm;
+    //document.getElementById("13").value = TextBox1pm;
+    $('#13').val(TextBox1pm)
 
     TextBox2pm = localStorage.getItem("saveBtn6");
     console.log(TextBox2pm);
-    document.getElementById("14").value = TextBox2pm;
+    //document.getElementById("14").value = TextBox2pm;
+    $('#14').val(TextBox2pm)
 
     TextBox3pm = localStorage.getItem("saveBtn7");
     console.log(TextBox3pm);
-    document.getElementById("15").value = TextBox3pm;
+    //document.getElementById("15").value = TextBox3pm;
+    $('#15').val(TextBox3pm)
 
     TextBox4pm = localStorage.getItem("saveBtn8");
     console.log(TextBox4pm);
-    document.getElementById("16").value = TextBox4pm;
+    //document.getElementById("16").value = TextBox4pm;
+    $('#16').val(TextBox4pm)
 
     TextBox5pm = localStorage.getItem("saveBtn9");
     console.log(TextBox5pm);
-    document.getElementById("17").value = TextBox5pm;
+    //document.getElementById("17").value = TextBox5pm;
+    $('#17').val(TextBox5pm)
     }
     
     getData();
