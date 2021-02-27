@@ -39,8 +39,6 @@ timeLooper();
 
 /***************************************************************************/
 //Store inputs in local storage
-let inputBox1 = $('#9');
-
 $('#saveBtn1').on("click", function(){
     console.log('Click1');
     let timeSlot1 = $(this).attr('id');
@@ -48,15 +46,6 @@ $('#saveBtn1').on("click", function(){
     localStorage.setItem(timeSlot1, InputValue1);
     console.log(timeSlot1, InputValue1);
 });
-
-
-function getData() {
-TextBox9am = localStorage.getItem("saveBtn1");
-console.log(TextBox9am);
-document.getElementById("9").value = TextBox9am;
-}
-
-getData();
 
 $('#saveBtn2').on("click", function(){
     console.log('Click2');
@@ -121,3 +110,46 @@ $('#saveBtn9').on("click", function(){
     localStorage.setItem(timeSlot9, InputValue9);
     console.log(timeSlot9, InputValue9);
 });
+
+/********************************************************/
+//Pull data from local storage
+
+function getData() {
+    TextBox9am = localStorage.getItem("saveBtn1");
+    console.log(TextBox9am);
+    document.getElementById("9").value = TextBox9am;
+
+    TextBox10am = localStorage.getItem("saveBtn2");
+    console.log(TextBox10am);
+    document.getElementById("10").value = TextBox10am;
+
+    TextBox11am = localStorage.getItem("saveBtn3");
+    console.log(TextBox11am);
+    document.getElementById("11").value = TextBox11am;
+
+    TextBox12am = localStorage.getItem("saveBtn4");
+    console.log(TextBox12am);
+    document.getElementById("12").value = TextBox12am;
+
+    TextBox1pm = localStorage.getItem("saveBtn5");
+    console.log(TextBox1pm);
+    document.getElementById("13").value = TextBox1pm;
+
+    TextBox2pm = localStorage.getItem("saveBtn6");
+    console.log(TextBox2pm);
+    document.getElementById("14").value = TextBox2pm;
+
+    TextBox3pm = localStorage.getItem("saveBtn7");
+    console.log(TextBox3pm);
+    document.getElementById("15").value = TextBox3pm;
+
+    TextBox4pm = localStorage.getItem("saveBtn8");
+    console.log(TextBox4pm);
+    document.getElementById("16").value = TextBox4pm;
+
+    TextBox5pm = localStorage.getItem("saveBtn9");
+    console.log(TextBox5pm);
+    document.getElementById("17").value = TextBox5pm;
+    }
+    
+    getData();
